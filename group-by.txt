@@ -1,0 +1,4 @@
+1. SELECT COUNT(`id`) as 'n_iscrizioni', YEAR(`enrolment_date`) AS 'anno' FROM `students` GROUP BY `anno`;
+2. SELECT `office_address` AS 'indirizzo_ufficio', COUNT(`id`) AS 'n_docenti' FROM `teachers` GROUP BY `indirizzo_ufficio`;
+3. SELECT `exam_id`, ROUND(AVG(`vote`),2) AS 'media_dei_voti' FROM `exam_student` GROUP BY `exam_id`;
+4. SELECT `department_id` AS 'dipartimento', COUNT(`id`) AS 'n_corsi' FROM `degrees` GROUP BY `department_id`;
